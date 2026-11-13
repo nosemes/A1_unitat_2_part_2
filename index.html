@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#faf7f0">
+<title>La família i la casa · Part 2 · Català A1</title>
+<style>
+:root{color-scheme:light;--ink:#243348;--muted:#526071;--paper:#faf7f0;--line:#e4d9c4;--amber:#f7d994;--pale:#fff3d7;--green:#1b633f;--red:#963d30}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}button,select,input{font:inherit;color:inherit}button,select{min-height:44px}button{cursor:pointer}button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #286ca9;outline-offset:3px}
+.wrap{width:min(100% - 36px,1080px);margin:auto}header{background:linear-gradient(120deg,#fff4d8,#f8e3b2);border-bottom:1px solid var(--line);padding:24px 0 30px}.back{display:inline-flex;align-items:center;min-height:44px;font-weight:700;text-underline-offset:4px}.course{font-size:.83rem;letter-spacing:.09em;text-transform:uppercase;font-weight:750;margin:24px 0 4px}.hero h1{font-family:Georgia,serif;font-weight:700;letter-spacing:-.035em;font-size:clamp(2.45rem,6vw,4.35rem);line-height:1.04;margin:0}.hero p:last-child{font-size:1.14rem;max-width:42ch;margin:14px 0 0}.hero{padding-bottom:25px}
+nav{display:flex;flex-wrap:wrap;gap:8px}nav a{padding:9px 12px;min-height:44px;background:#fff8ea;border:1px solid #e8c886;border-radius:10px;text-decoration:none;font-weight:650}nav a:hover{background:#fff}
+main{padding-block:30px 44px}.lesson{background:white;border:1px solid var(--line);border-radius:22px;padding:clamp(16px,3vw,28px);margin:0 0 18px;scroll-margin-top:14px}h2{font-size:clamp(1.45rem,4vw,1.95rem);line-height:1.15;margin:0 0 10px}h3{font-size:1.12rem;margin:22px 0 7px}p{margin:0 0 12px}.muted{color:var(--muted)}.examples{background:var(--pale);border-radius:12px;padding:13px 15px;margin:12px 0 15px}.examples p:last-child{margin:0}.columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.columns>*{min-width:0}
+table{border-collapse:collapse;width:100%;margin-block:14px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:7px 8px}th{font-size:.9rem}.exercises{display:grid;gap:8px}.exercise{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:#fdfbf6}.exercise label{display:block;font-weight:650;margin-bottom:5px}.exercise select{max-width:100%;padding:5px 29px 5px 9px;background:#fff;border:1px solid #a99b85;border-radius:7px}.controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}.primary,.secondary{border-radius:9px;border:1px solid transparent;padding:7px 13px;font-weight:700}.primary{background:var(--ink);color:#fff}.secondary{background:#fff;border-color:#cbbd9f}.feedback{display:block;font-size:.92rem;font-weight:650}.feedback:not(:empty){margin-top:5px}.right{color:var(--green)}.wrong{color:var(--red)}.form-status{margin:7px 0 0;min-height:1.5em;font-weight:650}
+details{margin-top:10px;background:#f6f4ee;border-radius:10px;padding:9px 13px}summary{font-weight:700;cursor:pointer;min-height:30px}details p:last-child{margin-bottom:0}.books{display:flex;gap:5px;flex-wrap:wrap;margin:6px 0 9px}.book{width:17px;height:25px;border-radius:3px;border:1px solid #854f26;background:#f5c586;border-left:5px solid #a55b31}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr));gap:8px}.cat-scene{height:100px;background:#fff9ed;border-radius:8px;margin:4px 0 8px;position:relative;overflow:hidden}.box{width:52px;height:41px;background:#efd5a1;border:2px solid #8c6639;position:absolute;left:calc(50% - 26px);top:30px;border-radius:4px}.cat{font-size:28px;line-height:1;position:absolute;left:calc(50% - 14px);top:35px}.scene-side .cat{left:calc(50% + 28px)}.scene-left .cat{left:calc(50% - 62px)}.scene-right .cat{left:calc(50% + 35px)}.scene-on .cat{top:4px}.scene-under .cat{top:70px}.scene-front .cat{top:51px;transform:scale(1.2)}.scene-behind .cat{top:14px;left:calc(50% + 9px)}.scene-behind .box{z-index:1}.scene-in .box{box-shadow:inset 0 0 0 5px #d0a66e}.scene-out .cat{left:calc(50% + 48px);top:58px}
+.room{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0}.room figcaption{padding:7px 10px;font-weight:750}.room svg{display:block;width:100%;height:auto;background:#fff6e4}.room-check{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:6px;margin-top:10px}.room-check label{display:flex;align-items:center;gap:9px;min-height:44px;padding:5px 8px;border:1px solid var(--line);border-radius:8px}.room-check input{width:18px;height:18px;accent-color:var(--ink);flex-shrink:0}.room-check .feedback{margin:0}.task ol{padding-left:23px;margin-bottom:8px}.task li{margin-bottom:5px}.task .columns{align-items:start}footer{border-top:1px solid var(--line);padding:18px 0 26px;font-size:.9rem;color:var(--muted)}
+.learning-step{margin-top:21px;padding-top:2px;border-top:1px solid var(--line)}.learning-step h3{margin-top:14px}.say{background:#edf5ed;border-radius:9px;padding:9px 12px;margin:9px 0 0}.position-card{margin:0;padding:10px 11px;border:1px solid var(--line);border-radius:12px}.position-card figcaption strong,.position-card figcaption span{display:block}.position-card figcaption span{color:var(--muted);font-size:.92rem}
+@media(max-width:570px){.wrap{width:calc(100% - 24px)}header{padding-top:13px}.columns{grid-template-columns:1fr}.room-pair{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}nav a{font-size:.91rem}.hero p:last-child{font-size:1rem}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="back" href="./index.html">← Part 1 · Vocabulari amb imatges</a>
+<div class="hero">
+<p class="course">Català A1 · Unitat 2 · Part 2</p>
+<h1>La família i la casa</h1>
+<p>Presenta’t, pregunta a un company on viu i presenta’l al grup. Després, practica com descriure una casa.</p>
+</div>
+<nav aria-label="Apartats de la unitat">
+<a href="#viure">Jo, tu, ell o ella</a><a href="#persones">Qui és?</a><a href="#casa">A casa</a><a href="#gat">On és el gat?</a><a href="#diferencies">Diferències</a><a href="#parlem">Parlem</a>
+</nav>
+</div>
+</header>
+
+<main class="wrap">
+<section class="lesson" id="viure" aria-labelledby="viure-titol">
+<h2 id="viure-titol">Presentar-se, preguntar i presentar algú</h2>
+<p>Primer parla de tu. Després, fes una pregunta a una altra persona. Finalment, explica al grup què t’ha dit.</p>
+
+<div class="learning-step">
+<h3>1. Jo · Em presento</h3>
+<p>Quan parlo de mi, dic <strong>em dic</strong> i <strong>visc</strong>.</p>
+<div class="examples"><p>(Jo) <strong>em dic</strong> Nora. (Jo) <strong>visc</strong> a Lleida.</p></div>
+<form><div class="exercises" id="quiz-jo"></div></form>
+<p class="say"><strong>Digues-ho amb les teves dades.</strong> Em dic … i visc a …</p>
+</div>
+
+<div class="learning-step">
+<h3>2. Tu · Et pregunto</h3>
+<p>Quan pregunto directament a una persona, faig servir <strong>et dius</strong> i <strong>vius</strong>. La persona respon amb <strong>em dic</strong> i <strong>visc</strong>.</p>
+<div class="examples"><p>—Com <strong>et dius</strong>? —<strong>Em dic</strong> Pol.</p><p>—On <strong>vius</strong>? —<strong>Visc</strong> a Girona.</p></div>
+<form><div class="exercises" id="quiz-tu"></div></form>
+<p class="say"><strong>Practiqueu en parelles.</strong> Pregunta «Com et dius?» i «On vius?». Després, canvieu els papers.</p>
+</div>
+
+<div class="learning-step">
+<h3>3. Ell o ella · Presento algú</h3>
+<p>Quan parlo d’una altra persona, dic <strong>es diu</strong> i <strong>viu</strong>. Les formes són les mateixes amb <strong>ell</strong> i <strong>ella</strong>.</p>
+<div class="examples"><p>Aquest és el Pol. <strong>Es diu</strong> Pol i <strong>viu</strong> a Girona.</p><p>Aquesta és la Nora. <strong>Es diu</strong> Nora i <strong>viu</strong> a Lleida.</p></div>
+<form><div class="exercises" id="quiz-ell"></div></form>
+<p class="say"><strong>Presenta la teva parella.</strong> Es diu … i viu a …</p>
+</div>
+
+<div class="learning-step">
+<h3>Practica les tres formes</h3>
+<table aria-label="Formes del verb viure"><thead><tr><th scope="col">Parlo de mi</th><th scope="col">Et pregunto</th><th scope="col">Parlo d’algú</th></tr></thead>
+<tbody><tr><td>Jo <strong>visc</strong></td><td>Tu <strong>vius</strong></td><td>Ell / ella <strong>viu</strong></td></tr></tbody></table>
+<form><div class="exercises" id="quiz-viure"></div></form>
+</div>
+</section>
+
+<section class="lesson" id="persones" aria-labelledby="persones-titol">
+<h2 id="persones-titol">Qui és aquest? Qui és aquesta?</h2>
+<div class="columns">
+<div class="examples"><p><strong>Qui és aquest?</strong> Aquest és el meu germà. Es diu Pol.</p><p><strong>Qui és aquesta?</strong> Aquesta és la meva germana. Es diu Anna.</p></div>
+<div><table><thead><tr><th scope="col">Persona</th><th scope="col">Germà</th><th scope="col">Germana</th></tr></thead><tbody>
+<tr><th scope="row">Jo</th><td>el meu germà</td><td>la meva germana</td></tr>
+<tr><th scope="row">Tu</th><td>el teu germà</td><td>la teva germana</td></tr>
+<tr><th scope="row">Ell / ella</th><td>el seu germà</td><td>la seva germana</td></tr>
+</tbody></table></div>
+</div>
+<p>—Com es diu el teu germà? —El meu germà es diu Pol.<br>—Com es diu la seva germana? —La seva germana es diu Anna.</p>
+<form><div class="exercises" id="quiz-persones"></div></form>
+<div class="learning-step">
+<h3>Amb qui vius? Quants germans tens?</h3>
+<div class="examples"><p>—Amb qui vius? —Visc amb la meva família. / Visc amb una amiga. / Visc sol o sola.</p><p>—Quants germans tens? —Tinc un germà i dues germanes.</p><p>—Quants fills tens? —No tinc fills.</p></div>
+<form><div class="exercises" id="quiz-familia"></div></form>
+</div>
+</section>
+
+<section class="lesson" id="casa" aria-labelledby="casa-titol">
+<h2 id="casa-titol">Què hi ha a casa? On és cada cosa?</h2>
+<p>Fem servir <strong>hi ha</strong> per dir què trobem en un lloc. Fem servir <strong>és</strong> per indicar el lloc d’una persona o d’un objecte concret.</p>
+<div class="columns">
+<div class="examples"><p><strong>Què hi ha</strong> al menjador? Hi ha una taula i quatre cadires.</p><p><strong>On és</strong> la taula? La taula és al menjador.</p><p><strong>On és</strong> el Mandeep? El Mandeep és a la cuina.</p></div>
+<div class="examples"><p>A la cuina <strong>hi ha</strong> una nevera.</p><p>A l’habitació <strong>hi ha</strong> dos llits.</p><p>Al menjador <strong>hi ha</strong> dues taules.</p></div>
+</div>
+<h3>Relaciona cada acció amb un espai</h3>
+<form data-quiz><div class="exercises columns" id="quiz-espais"></div></form>
+<h3>Què hi ha a cada espai?</h3>
+<form data-quiz><div class="exercises columns" id="quiz-objectes"></div></form>
+<h3>Compta els objectes</h3>
+<form data-quiz><div class="exercises columns" id="quiz-quantitat"></div></form>
+</section>
+
+<section class="lesson" id="gat" aria-labelledby="gat-titol">
+<h2 id="gat-titol">On és el gat?</h2>
+<h3>Mira els exemples</h3>
+<p>Per dir on és el gat, prenem la caixa com a referència. Respon amb la frase <strong>«El gat és …»</strong>.</p>
+<p><strong>Al costat de</strong> vol dir que el gat és a prop d’un dels costats de la caixa. Per concretar quin costat, diem <strong>a l’esquerra de</strong> o <strong>a la dreta de</strong>, tal com ho veiem a la pantalla.</p>
+<div class="cat-grid" id="guia-gat"></div>
+<h3>Practica amb el gat</h3>
+<p>Observa cada escena i completa «El gat és…». Pots tornar a mirar els exemples quan ho necessitis.</p>
+<form><div class="exercises cat-grid" id="quiz-gat"></div></form>
+</section>
+
+<section class="lesson" id="diferencies" aria-labelledby="diferencies-titol">
+<h2 id="diferencies-titol">Troba les set diferències</h2>
+<p>Compara les dues habitacions i marca què canvia. Després, explica-ho amb una frase.</p>
+<div class="columns room-pair">
+<figure class="room"><figcaption>Habitació A</figcaption>
+<svg viewBox="0 0 360 225" role="img" aria-labelledby="room-a"><title id="room-a">Habitació A amb un llit, un llum, una catifa, una cadira, un quadre, una planta i un armari.</title>
+<path fill="#e9d5b9" d="M0 165h360v60H0z"/><path stroke="#bd9b73" d="M0 165h360"/>
+<rect x="28" y="36" width="68" height="113" rx="3" fill="#9f7452" stroke="#674e3c" stroke-width="3"/><path d="M62 37v111m-7-63v10m14-10v10" stroke="#fff0d4" stroke-width="2"/>
+<rect x="166" y="26" width="41" height="33" fill="#fffaf0" stroke="#946348" stroke-width="4"/><path d="m172 51 9-11 6 6 8-9 6 14Z" fill="#68917e"/>
+<rect x="128" y="190" width="102" height="20" rx="9" fill="#b97461"/>
+<rect x="134" y="77" width="101" height="99" rx="7" fill="#658488" stroke="#3c5559" stroke-width="3"/><rect x="146" y="86" width="77" height="24" rx="5" fill="#fffaf0"/><path d="M134 118h101" stroke="#c6dad7" stroke-width="3"/>
+<path d="M111 101v62m-11 0h23" stroke="#694d34" stroke-width="3"/><path d="m105 85-8 20h28l-7-20Z" fill="#e7ad47" stroke="#694d34" stroke-width="2"/>
+<path d="M260 108h22v31h-22zm-4 32h29m-26 0v24m23-24v24" fill="#b6875f" stroke="#694d34" stroke-width="3"/>
+<path d="M317 140q-26-8-18-23 12 3 18 20-4-21 7-27 10 12-7 30" fill="#618467"/><path d="M306 139h22l-4 20h-14Z" fill="#b97461"/>
+</svg></figure>
+<figure class="room"><figcaption>Habitació B</figcaption>
+<svg viewBox="0 0 360 225" role="img" aria-labelledby="room-b"><title id="room-b">Habitació B amb dos llits, dos llums, dues cadires, dos quadres, un rellotge i un armari.</title>
+<path fill="#e9d5b9" d="M0 165h360v60H0z"/><path stroke="#bd9b73" d="M0 165h360"/>
+<rect x="28" y="36" width="68" height="113" rx="3" fill="#9f7452" stroke="#674e3c" stroke-width="3"/><path d="M62 37v111m-7-63v10m14-10v10" stroke="#fff0d4" stroke-width="2"/>
+<g fill="#fffaf0" stroke="#946348" stroke-width="4"><rect x="142" y="26" width="34" height="29"/><rect x="206" y="26" width="34" height="29"/></g><path d="m147 50 8-11 7 7 6-8 4 12Zm64 0 8-11 7 7 6-8 4 12Z" fill="#68917e"/>
+<g fill="#658488" stroke="#3c5559" stroke-width="3"><rect x="131" y="77" width="53" height="99" rx="6"/><rect x="196" y="77" width="53" height="99" rx="6"/></g><g fill="#fffaf0"><rect x="140" y="86" width="35" height="24" rx="5"/><rect x="205" y="86" width="35" height="24" rx="5"/></g><path d="M131 118h53m12 0h53" stroke="#c6dad7" stroke-width="3"/>
+<path d="M111 101v62m-11 0h23m197-62v62m-11 0h23" stroke="#694d34" stroke-width="3"/><path d="m105 85-8 20h28l-7-20Zm209 0-8 20h28l-7-20Z" fill="#e7ad47" stroke="#694d34" stroke-width="2"/>
+<path d="M257 108h16v31h-16zm-2 32h20m-19 0v24m18-24v24m7-56h16v31h-16zm-2 32h20m-19 0v24m18-24v24" fill="#b6875f" stroke="#694d34" stroke-width="3"/>
+<circle cx="191" cy="64" r="8" fill="#e8bd68" stroke="#856646" stroke-width="2"/>
+</svg></figure>
+</div>
+<form id="quiz-diferencies"><div class="room-check" id="room-check"></div></form>
+<details><summary>Frases per explicar les diferències</summary>
+<p>A l’habitació A hi ha un llit i a la B hi ha dos llits. A la B hi ha dos llums de peu, dues cadires, dos quadres i un rellotge. A l’habitació A hi ha una catifa i una planta.</p>
+</details>
+</section>
+
+<section class="lesson task" id="parlem" aria-labelledby="parlem-titol">
+<h2 id="parlem-titol">Parlem en parelles</h2>
+<div class="columns">
+<div><h3>Entrevista un company o una companya</h3><ol><li>On vius?</li><li>Amb qui vius?</li><li>Quants germans o fills tens?</li><li>Com és casa teva? Què hi ha al menjador?</li></ol></div>
+<div><h3>Presenta’l o presenta-la al grup</h3><p class="examples">Aquesta és la Laia. Viu a Girona amb la seva mare. Té dos germans. Casa seva és petita. Al menjador hi ha un sofà al costat de la finestra.</p></div>
+</div>
+<h3>Qui viu a la casa?</h3>
+<p>Dibuixa un plànol senzill de casa teva o d’una casa inventada. Situa-hi tres persones i demana a la teva parella que en digui el nom i on són. Després, canvieu els papers.</p>
+<details><summary>Model de diàleg</summary><p>—Qui viu en aquesta casa?<br>—Hi viuen l’Anna, el seu germà i el seu pare.<br>—On és l’Anna?<br>—És a la cuina, al costat de la nevera.</p></details>
+</section>
+<noscript><p>Activa JavaScript al navegador per fer i corregir els exercicis.</p></noscript>
+</main>
+<footer><div class="wrap">Activitats adaptades de la unitat 2 «La casa» del curs A1 del Consorci per a la Normalització Lingüística, pàg. 19–24.</div></footer>
+<script>
+"use strict";
+
+function element(tag, text, className) {
+  const node = document.createElement(tag);
+  if (text) node.textContent = text;
+  if (className) node.className = className;
+  return node;
+}
+
+const exercises = {
+  persones: [
+    ["___ és el meu germà.", ["Aquesta", "Aquest"], "Aquest"],
+    ["___ és la meva mare.", ["Aquesta", "Aquest"], "Aquesta"],
+    ["Parles amb el Pol. «Com es diu la ___ germana?»", ["meva", "seva", "teva"], "teva"],
+    ["Parles de l’Anna. «El ___ pare es diu Jordi.»", ["seu", "meu", "teu"], "seu"],
+  ],
+  jo: [
+    ["Et presentes. «___ dic Nora.»", ["Et", "Es", "Em"], "Em"],
+    ["Dius on vius. «Jo ___ a Lleida.»", ["vius", "visc", "viu"], "visc"],
+  ],
+  tu: [
+    ["Preguntes directament al Pol. «Com ___ dius?»", ["et", "em", "es"], "et"],
+    ["Preguntes directament a la Nora. «On ___?»", ["viu", "visc", "vius"], "vius"],
+    ["Et pregunten «On vius?». Què respons?", ["Viu a Girona.", "Visc a Girona.", "Vius a Girona."], "Visc a Girona."],
+  ],
+  ell: [
+    ["Presentes la Nora. «___ diu Nora.»", ["Em", "Es", "Et"], "Es"],
+    ["Parles del Pol. «El Pol ___ a Girona.»", ["viu", "vius", "visc"], "viu"],
+    ["Parles de la Nora. «Ella ___ a Lleida.»", ["vius", "visc", "viu"], "viu"],
+  ],
+  viure: [
+    ["Tu preguntes i el Pol respon. «On ___, Pol?»", ["viu", "vius", "visc"], "vius"],
+    ["El Pol respon. «Jo ___ a Girona.»", ["visc", "viu", "vius"], "visc"],
+    ["Tu expliques la resposta al grup. «El Pol ___ a Girona.»", ["vius", "visc", "viu"], "viu"],
+  ],
+  familia: [
+    ["Quina pregunta va amb «Visc amb la meva amiga»?", ["On vius?", "Amb qui vius?", "Quants germans tens?"], "Amb qui vius?"],
+    ["Quina resposta va amb «Quants fills tens?»?", ["Visc a Girona.", "Tinc dos fills.", "Visc sola."], "Tinc dos fills."],
+  ],
+  espais: [
+    ["Cuinar", ["la cuina", "el lavabo", "el menjador"], "la cuina"],
+    ["Menjar en família", ["el garatge", "el menjador", "el lavabo"], "el menjador"],
+    ["Mirar la tele al sofà", ["l’estudi", "el rebedor", "la sala d’estar"], "la sala d’estar"],
+    ["Dormir", ["el menjador", "el garatge", "l’habitació"], "l’habitació"],
+    ["Estudiar", ["l’estudi", "el garatge", "el lavabo"], "l’estudi"],
+    ["Dutxar-se", ["la sala d’estar", "el lavabo", "el garatge"], "el lavabo"],
+    ["Entrar a casa i deixar-hi l’abric", ["el rebedor", "l’estudi", "el terrat"], "el rebedor"],
+  ],
+  objectes: [
+    ["Què hi ha a la cuina?", ["Hi ha una dutxa.", "Hi ha una nevera.", "Hi ha un llit."], "Hi ha una nevera."],
+    ["Què hi ha al menjador?", ["Hi ha un cotxe.", "Hi ha un llit.", "Hi ha una taula i cadires."], "Hi ha una taula i cadires."],
+    ["On és el cotxe?", ["El cotxe és al garatge.", "El cotxe és al menjador.", "El cotxe és al lavabo."], "El cotxe és al garatge."],
+    ["On és el llit?", ["Hi ha un llit.", "El llit és a l’habitació.", "Hi ha una habitació."], "El llit és a l’habitació."],
+  ],
+};
+
+function bookScene(count) {
+  const scene = element("div", "", "books");
+  scene.setAttribute("role", "img");
+  scene.setAttribute("aria-label", Array(count).fill("llibre").join(", "));
+  for (let index = 0; index < count; index += 1) {
+    const book = element("span", "", "book");
+    book.setAttribute("aria-hidden", "true");
+    scene.append(book);
+  }
+  return scene;
+}
+
+exercises.quantitat = [
+  ["Quants llibres hi ha al primer prestatge?", ["Hi ha dos llibres.", "Hi ha tres llibres.", "Hi ha quatre llibres."], "Hi ha quatre llibres.", () => bookScene(4)],
+  ["Quants llibres hi ha al segon prestatge?", ["Hi ha dos llibres.", "Hi ha cinc llibres.", "Hi ha quatre llibres."], "Hi ha dos llibres.", () => bookScene(2)],
+  ["A la cuina hi ha ___ cadires.", ["dos", "dues"], "dues"],
+  ["Al menjador hi ha ___ llums.", ["dos", "dues"], "dos"],
+];
+
+function catScene(position, description) {
+  const scene = element("div", "", "cat-scene scene-" + position);
+  scene.setAttribute("role", "img");
+  scene.setAttribute("aria-label", description);
+  const box = element("span", "", "box");
+  const cat = element("span", "🐈", "cat");
+  box.setAttribute("aria-hidden", "true");
+  cat.setAttribute("aria-hidden", "true");
+  scene.append(box, cat);
+  return scene;
+}
+
+const catPositions = {
+  side: ["al costat de", "El gat és molt a prop d’un costat de la caixa."],
+  left: ["a l’esquerra de", "El gat és al costat esquerre de la caixa."],
+  right: ["a la dreta de", "El gat és al costat dret de la caixa."],
+  front: ["davant de", "Veus el gat més a prop teu: tapa una part de la caixa."],
+  behind: ["darrere de", "Veus la caixa més a prop teu: tapa una part del gat."],
+  on: ["a sobre de", "El gat és damunt de la caixa."],
+  under: ["a sota de", "El gat és més avall que la caixa."],
+  in: ["dins de", "La caixa envolta el gat."],
+  out: ["fora de", "El gat queda a l’exterior de la caixa."],
+};
+
+const catGuide = document.getElementById("guia-gat");
+for (const [position, [phrase, description]] of Object.entries(catPositions)) {
+  const example = element("figure", "", "position-card");
+  const caption = element("figcaption");
+  caption.append(element("strong", "El gat és " + phrase + " la caixa."), element("span", description));
+  example.append(catScene(position, description), caption);
+  catGuide.append(example);
+}
+
+const catQuestions = [
+  ["behind", ["front", "behind", "on"]],
+  ["left", ["left", "right", "under"]],
+  ["in", ["out", "front", "in"]],
+  ["on", ["under", "on", "in"]],
+  ["right", ["left", "right", "on"]],
+  ["front", ["behind", "under", "front"]],
+  ["under", ["on", "under", "in"]],
+  ["out", ["in", "out", "behind"]],
+  ["side", ["behind", "in", "side"]],
+];
+
+exercises.gat = catQuestions.map(([position, choices], index) => {
+  const [answer, description] = catPositions[position];
+  return [
+    "Escena " + (index + 1),
+    choices.map(choice => catPositions[choice][0] + " la caixa"),
+    answer + " la caixa",
+    () => catScene(position, description),
+  ];
+});
+
+function addControls(form) {
+  const controls = element("div", "", "controls");
+  const check = element("button", "Comprova", "primary");
+  check.type = "submit";
+  const reset = element("button", "Torna a començar", "secondary");
+  reset.type = "reset";
+  controls.append(check, reset);
+
+  const status = element("p", "", "form-status");
+  status.setAttribute("role", "status");
+  form.append(controls, status);
+  return status;
+}
+
+function setFeedback(feedback, correct, message) {
+  feedback.textContent = message;
+  feedback.classList.toggle("right", correct);
+  feedback.classList.toggle("wrong", !correct);
+}
+
+function clearFeedback(input, feedback) {
+  feedback.textContent = "";
+  input.removeAttribute("aria-invalid");
+}
+
+function renderQuiz(key, questions) {
+  const list = document.getElementById("quiz-" + key);
+  const form = list.closest("form");
+  const fields = questions.map(([prompt, options, answer, visual], index) => {
+    const row = element("div", "", "exercise");
+    const label = element("label", prompt);
+    const select = element("select");
+    select.id = key + "-" + index;
+    label.htmlFor = select.id;
+    select.add(new Option("Tria una resposta", ""));
+    options.forEach(option => select.add(new Option(option, option)));
+
+    const feedback = element("span", "", "feedback");
+    feedback.id = select.id + "-resultat";
+    select.setAttribute("aria-describedby", feedback.id);
+    row.append(label);
+    if (visual) {
+      const scene = visual();
+      scene.id = select.id + "-imatge";
+      select.setAttribute("aria-describedby", scene.id + " " + feedback.id);
+      row.append(scene);
+    }
+    row.append(select, feedback);
+    list.append(row);
+    return { select, answer, feedback };
+  });
+  const status = addControls(form);
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    let correct = 0;
+    let pending = 0;
+    for (const { select, answer, feedback } of fields) {
+      if (!select.value) {
+        pending += 1;
+        setFeedback(feedback, false, "Tria una resposta.");
+        continue;
+      }
+      const matches = select.value === answer;
+      correct += Number(matches);
+      select.setAttribute("aria-invalid", String(!matches));
+      setFeedback(feedback, matches, matches ? "Correcte." : "Torna-ho a provar.");
+    }
+    status.textContent = correct + " de " + fields.length + " respostes correctes."
+      + (pending ? " En queden " + pending + " per respondre." : "");
+  });
+  for (const { select, feedback } of fields) {
+    select.addEventListener("change", () => {
+      clearFeedback(select, feedback);
+      status.textContent = "";
+    });
+  }
+  form.addEventListener("reset", () => {
+    fields.forEach(({ select, feedback }) => clearFeedback(select, feedback));
+    status.textContent = "";
+  });
+}
+
+Object.entries(exercises).forEach(([key, questions]) => renderQuiz(key, questions));
+
+const differences = [
+  ["Nombre de llits", true], ["Nombre de llums de peu", true], ["L’armari", false],
+  ["La catifa", true], ["Nombre de cadires", true], ["Nombre de quadres", true],
+  ["El color de la paret", false], ["La planta", true], ["El rellotge", true],
+];
+
+const roomForm = document.getElementById("quiz-diferencies");
+const roomList = document.getElementById("room-check");
+const roomFields = differences.map(([name, changes], index) => {
+  const label = element("label");
+  const checkbox = element("input");
+  checkbox.type = "checkbox";
+  const text = element("span", name);
+  const feedback = element("span", "", "feedback");
+  feedback.id = "diferencia-" + index;
+  checkbox.setAttribute("aria-describedby", feedback.id);
+  text.append(feedback);
+  label.append(checkbox, text);
+  roomList.append(label);
+  return { checkbox, changes, feedback };
+});
+const roomStatus = addControls(roomForm);
+
+roomForm.addEventListener("submit", event => {
+  event.preventDefault();
+  let found = 0;
+  let incorrect = 0;
+  for (const { checkbox, changes, feedback } of roomFields) {
+    if (!checkbox.checked) {
+      clearFeedback(checkbox, feedback);
+      continue;
+    }
+    found += Number(changes);
+    incorrect += Number(!changes);
+    checkbox.setAttribute("aria-invalid", String(!changes));
+    setFeedback(feedback, changes, changes ? "Sí, canvia." : "És igual a les dues habitacions.");
+  }
+  roomStatus.textContent = "Has trobat " + found + " de 7 diferències."
+    + (incorrect ? " Revisa els elements marcats que són iguals." : "");
+});
+roomForm.addEventListener("change", event => {
+  const field = roomFields.find(({ checkbox }) => checkbox === event.target);
+  clearFeedback(field.checkbox, field.feedback);
+  roomStatus.textContent = "";
+});
+roomForm.addEventListener("reset", () => {
+  roomFields.forEach(({ checkbox, feedback }) => clearFeedback(checkbox, feedback));
+  roomStatus.textContent = "";
+});
+</script>
+</body>
+</html>
